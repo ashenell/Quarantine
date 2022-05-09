@@ -7,7 +7,7 @@ Modules used on script
 - csv
 - pandas
 
-If Pandas is not installed in to your environment
+If Pandas is not installed into your environment
 
 Windows/linux/MacOS
 ```
@@ -15,7 +15,7 @@ pip3 install pandas
 ```
 ## Input sample csv file
 
-On a older Powrshell version the csv file format output may contain unnecessary quotes: 
+On an older Powrshell version the csv file format output may contain unnecessary quotes: 
 
 ```csv
 "ReceivedTime";"Type";"SenderAddress";"Subject"
@@ -34,9 +34,9 @@ On a older Powrshell version the csv file format output may contain unnecessary 
 ```
 File delimiter is ";"
 
-### Function that cehecks and removes quetes
+### Function that checks and removes quotes
 
-Ceheck function to read file.
+Check function to read file.
 
 ```Python
 def get_quotes(path):
@@ -56,7 +56,7 @@ def get_quotes(path):
             ask_input()
 ```
 
-Removes all unmeccessary quotes.
+Removes all unnecessary quotes.
 
 ```Python
 def remove_quotes(path):
@@ -95,13 +95,13 @@ ReceivedTime;Type;SenderAddress;Subject
 
 ## Sorting methods
 
-Terher is 3 different ways how to sort the file.
+There are 3 different ways to sort the file.
 
 - Sorting all data by 'Type', 'SenderAddress', 'Subject'
 - Sorting data by 'Type', 'SenderAddress'
-- Sorting data by sepecific 'Type' like (spam, malware, high confidence phish, bulk, phish) and 'SenderAddress'
+- Sorting data by specific 'Type' like (spam, malware, high confidence phish, bulk, phish) and 'SenderAddress'
 
-For a user inputs fction is called.
+For a user input function is called.
 
 ```Python
 def ask_input():
@@ -120,7 +120,7 @@ def ask_input():
             sort_data_type(search_path, sort_path_all, sort_by_type)
 ```
 
-### Soted data output
+### Sorted data output
 
 First function for sorting by 'Type', 'SenderAddress', 'Subject'
 ```Python
